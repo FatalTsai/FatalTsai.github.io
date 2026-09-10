@@ -1,0 +1,42 @@
+請讀 index.html、styles.css、app.js。這是老師提供的純靜態網站。
+先用三句話指出名字、照片、專案在哪些元素。先不要修改。
+後續只改我指定的文字、src、alt、href；不要改版、裝套件或新增設定檔。
+這次我要先改的區塊是 名字與頭像。
+
+只修改 index.html 的 img#avatar。
+先確認 images/avatar-demo.svg 實際存在，再把 src 改為這個路徑。
+把 alt 改成 YA 字母頭像，非真人照片。
+保留 id、width、height、既有 CSS。不改首頁封面或其他圖片。
+這張圖的來源與公開同意是 教材素材，可作標示來源的示範。
+
+只修改 index.html 的 #skills-list。
+把內容換成 HTML：練習修改文字與圖片。
+一項能力維持一個 .skill；沒有資料的示例刪除，不用「熟練 90%」填空。
+不要修改 #about-text、#learning-goal 和其他 section。儲存後確認手機沒有空欄。
+
+只改 #project-1 裡的 img#project-1-image。
+將 src 改為 images/project-website.webp、alt 改 教材示範網站的畫面。
+這張是 成果照（教材網站）；若為構想，文字必須標明，不能當作完工證據。
+先確認路徑存在，保留圖片原本的寬高屬性；不改 #avatar 或 #life-gallery。
+
+在 #journey-list 最前面增加一個 .journey-item，新 id 用 journey-4。
+日期為 無，主題 【學習主題】，描述 【實际學到或試過什麼】。
+連結為 無；無連結就不建立 a，data-evidence=no。
+不要更改原有紀錄，檢查沒有重複 id。
+
+我只提供兩張生活照。請保留 #life-1 和 #life-2，移除 figure#life-3。
+照片 2 的 src 改為 images/life-cat.jpg，alt 改 貓咪素材，非本人寵物。
+只改 #life-2 figcaption h3 為 【生活照2標題】，其 p 改 【生活照2的一句圖說】。
+不要刪掉整個 #life-gallery，也不要補一張網路圖湊第三張。
+
+請只讀 #journey-list 的 .journey-item、data-evidence 和 .evidence-link。
+我想做「全部／有成果」兩顆按鈕。我的判斷是 data-evidence=yes 且真的有可用連結。
+先不要寫完整解答，用3個問題提示我 querySelectorAll、hidden 與計數如何配合。
+我回答後才给事件骨架。只改 app.js、必要的 HTML 和同一份 CSS，不增套件。
+驗收要包含：切回全部、零結果、新增第4筆後計數也正確。
+
+這次 GitHub Actions 失敗的 job 是 check，錯誤訊息：【貼第一個錯誤與附近數行，不含憑證】。
+請先讀涉及的 index.html 或圖片路徑，指出原因，再做最小修正。
+不要先刪除 CI、取消檢查、升級套件或新增 secrets。
+若是 Pages Source 未設定或帳號無權限，請指出要我手動點哪裡，停止猜程式錯誤。
+本機若沒有 Python／Node，說明未執行測試；不要要求學生臨時安裝一串工具。

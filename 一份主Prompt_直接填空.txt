@@ -1,0 +1,21 @@
+請在 VS Code 的這個 website 資料夾修改實際來源檔。先讀 index.html 的 EDIT 01–05；styles.css、theme.css、app.js 是固定輔助檔；這個版本沒有 config/profile.js。
+以下是一份完整 Prompt 的五個部分。依指定 id／class／標籤定位，不依行數。找不到結構先指出版本差異，不猜 ID。
+不重畫網站、不新增框架／Bootstrap／CDN／資料renderer／npm／後端；基礎只改 index.html 與 images；不要刪除或重寫 styles.css、theme.css、app.js，也不要為縮短程式犧牲排版或互動。維持 HTML≤2、JS≤2、CSS≤2。保留匹配的 id、href、aria-labelledby；保留必要來源署名。
+只用本人已提供且有權公開的資料。未填【】先問缺項；選填「無」移除該項，不編造經歷。草圖不是成果、素材不是本人照片。替換文字時正確處理 HTML 特殊字元。
+先確認圖片／附件真實存在、大小寫、副檔名與相對路徑。不要為了通過檢查刪掉 CI；不更改 .github，不自動 commit/push/部署，不索取密码或token。
+基本個人化完成後才逐項回報：修改檔案、圖片與連結、手機與重載檢查；沒有做的測試要明說。
+
+【1】
+只改 index.html。把 [data-person-name] 全部改為 【公開名字或暱稱】；title 使用這個名字＋我的學習作品集。#profile-english 改 無；#profile-school 改 無。#profile-tagline 改 【一句話介紹】；#profile-summary 改 【兩句自我介紹】，同步 meta[name="description"]。img#avatar 的 src 改 images/avatar-demo.svg，alt 改 YA 字母頭像，非真人照片。#about-text 改 【為什麼想記錄自己的學習】；#learning-goal 改 【最近一件想嘗試的事】。#skills-list 只保留 無，不要生成熟練度百分比。
+
+【2】
+在 #project-1 中，將 #project-1-title 改 【專案名稱】、#project-1-status 改 進行中，同步 article 的 data-status（idea / doing / done）。#project-1-summary 改 【想解決什麼與目前進度】；#project-1-role 改 【本人實際或預計負責】。#project-1-image 的 src 改 images/project-website.webp，alt 改 教材示範網站的畫面。#project-1-process 改 【實際做過的步驟；未開始就說明】；#project-1-next 改 【下一步】。第2件 #project-2 請依 無 更新；若「無」，整張 article 移除並清理指向它的連結。保留 details / summary；構想圖必須在 alt 與可見說明中標示，不得補假結果。
+
+【3】
+把 #journey-list 內紀錄改成 無。每筆保留 .journey-item，給唯一 id；時間不明就不補，data-evidence 只有真連結時設 yes。把 #experience 的活動清單改成 無，沿用 .experience-item。只使用上述新資料，移除未用示例。整區沒有資料時，刪除該 section 及 #side-nav 裡相對應的連結。不要把「參加」寫成「主辦」，不要新增技能百分比。前兩部分內容保留。
+
+【4】
+請更新 #life-1-image：src=images/life-coffee.jpg，alt=咖啡杯素材，非本人攝影。#life-1 figcaption h3=【生活照1標題】，其 p=【生活照1一句圖說】。#life-2-image：src=images/life-cat.jpg，alt=貓咪素材，非本人寵物；其圖說標題=【生活照2標題】，說明=【生活照2的一句圖說】。第3張 #life-3 用 無；無則移除。#hero-image 重用 images/life-coffee.jpg、alt=咖啡杯素材；#hero-caption=【首頁圖說】。圖片取自 教材素材，可作標示來源的示範。保留素材標示，不冒充本人作品。
+
+【5】
+把 #resources 換成 無。無資料就刪除 #resources 及 #side-nav a[href="#resources"]，不要留假按鈕。#github-link 的 href 改 https://github.com/skills，文字改 GitHub 學習資源 ↗；#contact-text 改 這裡連到 GitHub 學習資源。。需要改名的區塊是 無；同步 h2 與目錄文字，不改 id / href 或編號 span。本次為 虛構示範；文字與指定照片公開同意=否。不同意時先只做本機草稿，不公開。清掉未用的人物與經歷示例，保留來源署名。儲存後重載，檢查照片、錨點、手機、details；只回報實際做過的測試，不自動推送。
